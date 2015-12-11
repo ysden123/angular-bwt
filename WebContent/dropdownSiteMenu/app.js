@@ -26,5 +26,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	}).state('cs', {
 	    url : "/cs",
 	    templateUrl : "cs/cs.html"
+	}).state('links', {
+	    url : "/links",
+	    templateUrl : "links/links.html"
 	})
 })

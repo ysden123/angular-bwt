@@ -25,5 +25,8 @@ app.controller("DropdownSiteMenuController", function($scope, $http) {
 			title  : "Photoshop",
 			action : "cs"
 		}]
+	},{
+		title  : "Links",
+		action : "links"
 	}];
 });
