@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="ui.bootstrap.demo">
+	<head>
+	<meta charset="ISO-8859-1">
+	<title>Dropdown site menu with template</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
+    
+    <script src="app.js"></script>
+    
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div ng-controller="DropdownCtrl">
+		<!-- Single button using template-url -->
+		<div class="btn-group" uib-dropdown>
+			<button id="button-template-url" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+				Dropdown using template <span class="caret"></span>
+			</button>
+			<ul class="uib-dropdown-menu" template-url="dropdown.html" aria-labelledby="button-template-url">
+			</ul>
+		</div>
+	</div>
+	
+	<script type="text/ng-template" id="dropdown.html">
+        <ul class="uib-dropdown-menu" role="menu" aria-labelledby="button-template-url">
+          <li role="menuitem"><a href="#">Action in Template</a></li>
+          <li role="menuitem"><a href="#">Another action in Template</a></li>
+          <li role="menuitem"><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li role="menuitem"><a href="#">Separated link in Template</a></li>
+        </ul>
+    </script>
+</body>
+</html>
