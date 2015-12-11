@@ -8,7 +8,6 @@ app.controller("DropdownSiteMenuController", function($scope, $http) {
 		action : "home"
 	},{
 		title  : "Communication",
-		action : "#",
 		menus  : [{
 			title  : "Mail",
 			action : "mail"

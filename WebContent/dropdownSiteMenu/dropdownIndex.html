@@ -29,8 +29,10 @@
 			<div class="container">
 				<!-- Menu -->
 				<ul class="nav navbar-nav">
-					<li ng-repeat="menu in menus" ng-class="{dropdown: menu.menus}"><a ui-sref="{{menu.action}}" ng-class="{'dropdown-toggle': menu.menus}"
-						data-toggle="dropdown">{{menu.title}} <span ng-if="menu.menus" class="caret"></span></a>
+					<li ng-repeat="menu in menus" ng-class="{dropdown: menu.menus}">
+						<a ng-if="!menu.menus" ui-sref="{{menu.action}}" ng-class="{'dropdown-toggle': menu.menus}" data-toggle="dropdown">{{menu.title}}</a>
+						<a ng-if="menu.menus" ng-class="{'dropdown-toggle': menu.menus}" data-toggle="dropdown">{{menu.title}} <span
+							ng-if="menu.menus" class="caret"></span></a>
 						<ul ng-if="menu.menus" class="dropdown-menu">
 							<li ng-repeat="submenu in menu.menus"><a ui-sref="{{submenu.action}}">{{submenu.title}}</a></li>
 						</ul>
