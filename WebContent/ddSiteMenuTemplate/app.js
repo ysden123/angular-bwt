@@ -1,25 +1,23 @@
 /**
  * Application for dropdown site menu with templates 
  */
-angular.module('ui.bootstrap.demo', ['ngAnimate', 'ui.bootstrap']);
-angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope, $log) {
-  $scope.items = [
-    'The first choice!',
-    'And another choice for you.',
-    'but wait! A third!'
-  ];
+var app = angular.module('app', ['ngAnimate', 'ui.bootstrap', 'ui.router']);
 
-  $scope.status = {
-    isopen: false
-  };
-
-  $scope.toggled = function(open) {
-    $log.log('Dropdown is now: ', open);
-  };
-
-  $scope.toggleDropdown = function($event) {
-    $event.preventDefault();
-    $event.stopPropagation();
-    $scope.status.isopen = !$scope.status.isopen;
-  };
-});
+app.config(function($stateProvider, $urlRouterProvider) {
+	// For any unmatched url, send to /home
+	$urlRouterProvider.otherwise("/action11")
+	$stateProvider.state('#', {
+	}).state('action11', {
+	    url : "/action11",
+	    templateUrl : "action11/action11.html"
+	}).state('action12', {
+	    url : "/action12",
+	    templateUrl : "action12/action12.html"
+	}).state('action21', {
+	    url : "/action21",
+	    templateUrl : "action21/action21.html"
+	}).state('action22', {
+	    url : "/action22",
+	    templateUrl : "action22/action22.html"
+	})
+})
