@@ -20,5 +20,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	}).state('skype', {
 	    url : "/skype",
 	    templateUrl : "skype/skype.html"
+	}).state('lr', {
+	    url : "/lr",
+	    templateUrl : "lr/lr.html"
+	}).state('cs', {
+	    url : "/cs",
+	    templateUrl : "cs/cs.html"
 	})
 })

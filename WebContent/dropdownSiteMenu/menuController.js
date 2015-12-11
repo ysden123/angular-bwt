@@ -16,6 +16,15 @@ app.controller("DropdownSiteMenuController", function($scope, $http) {
 			title  : "Skype",
 			action : "skype"
 		}]
+	},{
+		title : "Photo",
+		menus : [{
+			title  : "Lightroom",
+			action : "lr"
+		},{
+			title  : "Photoshop",
+			action : "cs"
+		}]
 	}];
 	/****************************************************
 	,
