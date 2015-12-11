@@ -17,5 +17,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	}).state('mail', {
 	    url : "/mail",
 	    templateUrl : "mail/mail.html"
+	}).state('skype', {
+	    url : "/skype",
+	    templateUrl : "skype/skype.html"
 	})
 })

@@ -11,6 +11,10 @@ app.controller("DropdownSiteMenuController", function($scope, $http) {
 		menus  : [{
 			title  : "Mail",
 			action : "mail"
+		}
+		,{
+			title  : "Skype",
+			action : "skype"
 		}]
 	}];
 	/****************************************************
