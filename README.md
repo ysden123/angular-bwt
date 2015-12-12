@@ -7,7 +7,7 @@ These templates may be used as start points for new web application.
 The folder _dropdownSiteMenu_ is example of a web site with dropdown menus.
 The _ng-class_ dropdown is used.
 The controller fills the menus content.
-The main page uses UI routing for switching page content. 
+The main page uses UI routing for switching page content.
 
 ## Dropdown Site Menu with Templates
 The folder _ddSiteMenuTemplate_ is example of a web site with dropdown menus using templates.
